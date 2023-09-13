@@ -11,5 +11,6 @@ pex_binary(
     name="jupyter",
     dependencies=[":jupyterreqs", "src/python:python"],
     script="jupyter-lab",
-    execution_mode='venv'
+    # This is important, otherwise you'll get all kinds of errors.
+    execution_mode='venv',
 )
