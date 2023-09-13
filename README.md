@@ -13,7 +13,9 @@ If you want to pull in new changes to the library side, you will have to shut do
 
 ## setup as a developer of the libraries
 
-If you are actively developing the library side and are using the notebook for iterative testing, you'll want to set up and run jupyter much as you would an IDE, by exporting a virtual environment and setting up PYTHONPATH
+If you are actively developing the library side and are using the notebook for iterative testing, you'll want to set up and run jupyter much as you would [set up an IDE](https://www.pantsbuild.org/docs/setting-up-an-ide):
+- export a virtual environment and activate it
+- set up `PYTHONPATH`
 ```
 $ pants export --py-resolve-format=mutable_virtualenv --export-resolve=python-default
 ...
